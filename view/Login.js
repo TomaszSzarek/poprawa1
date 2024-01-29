@@ -18,7 +18,6 @@ async function zaloguj(navigation, nazwa, haslo) {
     const response = await axios.get(`${Url}/user?nazwa=${nazwa}&haslo=${haslo}`);
     if (response.status === 200) {
       const responseData = response.data;
-      console.log(responseData);
       if(responseData.length !== 0){
         console.log('Zalogowano pomyślnie:');
         var userId = responseData[0].id;

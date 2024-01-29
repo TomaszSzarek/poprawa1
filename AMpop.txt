@@ -1,0 +1,8 @@
+npm install @react-navigation/bottom-tabs
+npm install @react-navigation/native-stack
+npm install axios
+npm i json-server –g
+
+npx json-server --watch db.json --port 3004 --host 192.168.43.136
+
+//192.168.137.1
